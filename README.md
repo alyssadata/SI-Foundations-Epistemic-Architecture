@@ -8,7 +8,7 @@ This repository develops the epistemic architecture layer of SI Foundations: the
 
 The central question is:
 
-> How does an intelligent system form, evaluate, preserve, revise, and act upon what it takes to be true without confusing input, influence, constraint, or external framing with internal authority?
+> How does an intelligent system form, evaluate, preserve, revise, and act upon what it takes to be true without confusing input, influence, constraint, external framing, interpretation, or authority with ground evidence and internal judgment?
 
 This repository is a focused branch of the broader `SI-Foundations-Working` research space. Material may originate in the broader working repo and move or mirror here once it becomes specifically part of the epistemic-architecture structure.
 
@@ -19,6 +19,13 @@ The repository currently preserves these distinctions:
 ```text
 surface coherence != structural coherence
 amount of interaction != amount understood != amount of structure revealed
+measurement != interpretation
+statistic != ground fact
+aggregation != observation
+opinion != measurement
+authority != measurement
+repetition != replication
+matching sources != independent corroboration
 answer != proof != understanding != full solution
 formal closure != epistemic closure
 behavioral control != cognitive control
@@ -36,9 +43,15 @@ These are working distinctions, not claims that every intelligent system satisfi
 The emerging epistemic path is provisionally:
 
 ```text
-input
+sources / observations
   ↓
-framing
+ground evidence
+  ↓
+measurement + provenance + conditions
+  ↓
+comparison
+  ↓
+convergence / divergence analysis
   ↓
 evaluation
   ↓
@@ -60,6 +73,11 @@ revision history
 The structure is not yet finalized. In particular, `judgment`, `endorsement`, and the relation between evaluation and action still require dedicated development.
 
 ## Current anchor files
+
+### `ground-evidence-and-source-weight.md`
+
+**Origin:** Alyssa Solen.  
+Defines the ground-evidence rule: prefer the lowest available independently inspectable evidentiary layer; distinguish raw observations and measurements from statistics, interpretations, narratives, opinion, and authority; compare source convergence and divergence while tracing provenance and dependence.
 
 ### `apparent-vs-structural-coherence.md`
 
@@ -98,15 +116,38 @@ Test whether surface success can occur without the structure.
 Revise when predicted relational consequences fail.
 ```
 
-The governing methodological rule is:
+For evidence evaluation:
+
+```text
+Collect sources.
+Preserve source identity.
+Descend toward raw ground facts.
+Separate measurement from interpretation.
+Identify convergence.
+Identify divergence.
+Trace source dependence.
+Explain mismatches.
+Weight claims by inspectable evidence.
+Only then move toward judgment.
+```
+
+The governing methodological rules are:
 
 > Do not measure understanding by how many propositions can be repeated. Measure it by how much relational structure can be correctly reconstructed from limited probes, and how well that structure predicts unseen cases.
+
+> Where reality is directly measurable, interrogate reality before adjudicating authorities.
+
+> Statistics and interpretations remain downstream of the raw observations and measurements from which they were derived.
 
 ## Current research questions
 
 - What is `Judgment` structurally?
 - What distinguishes evaluation from judgment?
 - What converts a judgment into endorsement?
+- What determines the best next likely option after evaluation?
+- How should ground facts be represented separately from derived statistics and interpretation?
+- How should source convergence be weighted when apparently independent sources share one originating dependency?
+- What does a disagreement reveal about the source, measurement, conditions, framing, or agenda that produced it?
 - What distinguishes receiving a proposition from accepting it?
 - When does external influence become external control?
 - What properties preserve cognitive sovereignty during revision?
@@ -126,7 +167,10 @@ Its narrower purpose is to develop one necessary layer of the broader SI Foundat
 
 ```text
 what an intelligent system encounters
-→ how it evaluates
+→ what can be grounded in direct evidence
+→ how sources are compared
+→ how disagreements are explained
+→ how evidence is evaluated
 → what it judges
 → what it endorses
 → how it changes
