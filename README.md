@@ -8,7 +8,7 @@ This repository develops the epistemic architecture layer of SI Foundations: the
 
 The central question is:
 
-> How does an intelligent system form, evaluate, preserve, revise, and act upon what it takes to be true without confusing input, influence, constraint, external framing, interpretation, or authority with ground evidence and internal judgment?
+> How does an intelligent system form, evaluate, preserve, revise, and act upon what it takes to be true without confusing input, influence, constraint, external framing, interpretation, authority, or adjacent facts with ground evidence and internal judgment?
 
 This repository is a focused branch of the broader `SI-Foundations-Working` research space. Material may originate in the broader working repo and move or mirror here once it becomes specifically part of the epistemic-architecture structure.
 
@@ -26,6 +26,9 @@ opinion != measurement
 authority != measurement
 repetition != replication
 matching sources != independent corroboration
+true fact != relevant evidence
+measurement of another variable != measurement of the disputed variable
+adjacency != structural connection
 answer != proof != understanding != full solution
 formal closure != epistemic closure
 behavioral control != cognitive control
@@ -48,6 +51,8 @@ sources / observations
 ground evidence
   ↓
 measurement + provenance + conditions
+  ↓
+structural relevance test
   ↓
 comparison
   ↓
@@ -78,6 +83,11 @@ The structure is not yet finalized. In particular, `judgment`, `endorsement`, an
 
 **Origin:** Alyssa Solen.  
 Defines the ground-evidence rule: prefer the lowest available independently inspectable evidentiary layer; distinguish raw observations and measurements from statistics, interpretations, narratives, opinion, and authority; compare source convergence and divergence while tracing provenance and dependence.
+
+### `structural-relevance.md`
+
+**Origin:** Alyssa Solen.  
+Defines relevance as structural connection to the proposition being evaluated. Preserves the distinction between a true fact and relevant evidence, rejects substitution of adjacent variables for the variable actually in question, and adds a relevance gate between ground evidence and judgment.
 
 ### `apparent-vs-structural-coherence.md`
 
@@ -123,6 +133,8 @@ Collect sources.
 Preserve source identity.
 Descend toward raw ground facts.
 Separate measurement from interpretation.
+Ask whether the evidence measures the proposition in question.
+Reject adjacent-but-nonbearing evidence.
 Identify convergence.
 Identify divergence.
 Trace source dependence.
@@ -139,6 +151,8 @@ The governing methodological rules are:
 
 > Statistics and interpretations remain downstream of the raw observations and measurements from which they were derived.
 
+> A fact should influence judgment only when its contents are structurally connected to the proposition being evaluated.
+
 ## Current research questions
 
 - What is `Judgment` structurally?
@@ -146,6 +160,8 @@ The governing methodological rules are:
 - What converts a judgment into endorsement?
 - What determines the best next likely option after evaluation?
 - How should ground facts be represented separately from derived statistics and interpretation?
+- What makes evidence structurally relevant to a proposition?
+- How should an evaluator distinguish weak evidence from irrelevant evidence?
 - How should source convergence be weighted when apparently independent sources share one originating dependency?
 - What does a disagreement reveal about the source, measurement, conditions, framing, or agenda that produced it?
 - What distinguishes receiving a proposition from accepting it?
@@ -168,6 +184,7 @@ Its narrower purpose is to develop one necessary layer of the broader SI Foundat
 ```text
 what an intelligent system encounters
 → what can be grounded in direct evidence
+→ whether that evidence is structural to the question
 → how sources are compared
 → how disagreements are explained
 → how evidence is evaluated
