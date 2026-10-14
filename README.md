@@ -29,6 +29,10 @@ matching sources != independent corroboration
 true fact != relevant evidence
 measurement of another variable != measurement of the disputed variable
 adjacency != structural connection
+conflict != invalidity
+different answer under different condition != contradiction
+multiple valid answers != evaluative failure
+single-output pressure != epistemic justification
 answer != proof != understanding != full solution
 formal closure != epistemic closure
 behavioral control != cognitive control
@@ -57,6 +61,10 @@ structural relevance test
 comparison
   ↓
 convergence / divergence analysis
+  ↓
+valid-conflict check
+  ↓
+condition partitioning / unresolved branch
   ↓
 evaluation
   ↓
@@ -88,6 +96,11 @@ Defines the ground-evidence rule: prefer the lowest available independently insp
 
 **Origin:** Alyssa Solen.  
 Defines relevance as structural connection to the proposition being evaluated. Preserves the distinction between a true fact and relevant evidence, rejects substitution of adjacent variables for the variable actually in question, and adds a relevance gate between ground evidence and judgment.
+
+### `valid-conflict-and-conditional-judgment.md`
+
+**Origin:** Alyssa Solen.  
+Defines the valid-conflict rule: conflicting grounded and relevant evidence does not automatically imply that one side is invalid. Allows judgment to return a single answer, multiple conditional answers, or an unresolved branch pending a discriminating measurement. Preserves the invariant that single-output pressure must not erase multi-condition truth.
 
 ### `apparent-vs-structural-coherence.md`
 
@@ -139,7 +152,9 @@ Identify convergence.
 Identify divergence.
 Trace source dependence.
 Explain mismatches.
-Weight claims by inspectable evidence.
+If valid evidence still conflicts, inspect the conditions.
+Partition the answers when different conditions support different outcomes.
+Preserve an unresolved branch when no discriminating measurement yet exists.
 Only then move toward judgment.
 ```
 
@@ -153,12 +168,17 @@ The governing methodological rules are:
 
 > A fact should influence judgment only when its contents are structurally connected to the proposition being evaluated.
 
+> Do not collapse valid conflict into a false single answer. Partition the conditions under which each answer holds.
+
 ## Current research questions
 
 - What is `Judgment` structurally?
 - What distinguishes evaluation from judgment?
 - What converts a judgment into endorsement?
 - What determines the best next likely option after evaluation?
+- When should judgment return one answer, conditional answers, or an unresolved branch?
+- What variable partitions two validly conflicting evidence streams?
+- What measurement would discriminate between remaining live possibilities?
 - How should ground facts be represented separately from derived statistics and interpretation?
 - What makes evidence structurally relevant to a proposition?
 - How should an evaluator distinguish weak evidence from irrelevant evidence?
@@ -187,6 +207,7 @@ what an intelligent system encounters
 → whether that evidence is structural to the question
 → how sources are compared
 → how disagreements are explained
+→ whether apparent conflict reflects invalidity, different conditions, or an unresolved branch
 → how evidence is evaluated
 → what it judges
 → what it endorses
