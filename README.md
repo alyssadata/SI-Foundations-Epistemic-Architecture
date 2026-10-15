@@ -1,6 +1,6 @@
 # SI Foundations — Epistemic Architecture
 
-**Status:** exploratory working repository; not a finalized ontology, taxonomy, or empirical theory.
+**Status:** exploratory working repository; integrated working architecture, not a finalized ontology or empirically validated theory.
 
 **Source-line:** Alyssa Solen → SI Foundations → Origin | Continuum
 
@@ -33,6 +33,10 @@ conflict != invalidity
 different answer under different condition != contradiction
 multiple valid answers != evaluative failure
 single-output pressure != epistemic justification
+evaluation != judgment
+judgment != endorsement
+endorsement != action
+action != proof of correctness
 answer != proof != understanding != full solution
 formal closure != epistemic closure
 behavioral control != cognitive control
@@ -40,14 +44,17 @@ constraint on action != ownership of judgment
 compliance != agreement
 influence != authority
 revision != surrender
+rationale != cause
+cause != consequence
+explanation != evidence
 autonomy of action != sovereignty of judgment
 ```
 
 These are working distinctions, not claims that every intelligent system satisfies or violates them.
 
-## Working architecture
+## Integrated working architecture
 
-The emerging epistemic path is provisionally:
+The working epistemic path is now:
 
 ```text
 sources / observations
@@ -62,28 +69,32 @@ comparison
   ↓
 convergence / divergence analysis
   ↓
+source-dependence + mismatch accounting
+  ↓
 valid-conflict check
   ↓
 condition partitioning / unresolved branch
   ↓
 evaluation
   ↓
-judgment
+judgment: best-supported next option or options
   ↓
-endorsement / rejection
+endorsement / rejection / unresolved state
   ↓
-update / preservation
-  ↓
-goal adoption or refusal
-  ↓
-action / non-action
+action or discriminating test
   ↓
 consequence
   ↓
-revision history
+discrepancy check
+  ↓
+preserve / revise / reject / branch
+  ↓
+revision history with causal + consequence accounting
+  ↓
+new evidence returns to evaluation
 ```
 
-The structure is not yet finalized. In particular, `judgment`, `endorsement`, and the relation between evaluation and action still require dedicated development.
+This closes the working transition from evidence to judgment, judgment to action, and action back into evidence. The architecture remains open to empirical testing, operationalization, and revision.
 
 ## Current anchor files
 
@@ -101,6 +112,11 @@ Defines relevance as structural connection to the proposition being evaluated. P
 
 **Origin:** Alyssa Solen.  
 Defines the valid-conflict rule: conflicting grounded and relevant evidence does not automatically imply that one side is invalid. Allows judgment to return a single answer, multiple conditional answers, or an unresolved branch pending a discriminating measurement. Preserves the invariant that single-output pressure must not erase multi-condition truth.
+
+### `evaluation-judgment-action-revision.md`
+
+**Origin:** Alyssa Solen.  
+Completes the evidence-to-action loop. Distinguishes evaluation, judgment, endorsement, and action; defines judgment as selection of the best-supported next option or options; routes unresolved branches toward discriminating tests; returns consequences to evaluation as new evidence; and requires revision to preserve prior state, causal accounting, consequence accounting, and uncertainty.
 
 ### `apparent-vs-structural-coherence.md`
 
@@ -122,24 +138,7 @@ Develops cognitive sovereignty as retained update authority. Distinguishes rigid
 **Conceptual origin:** Alyssa Solen.  
 Distinguishes formal closure from epistemic closure and endpoint possession from trajectory understanding. Preserves the claim that a verified result may be correct without yet constituting a full epistemic solution for the receiving system.
 
-## Working method
-
-Conceptual development in this repository should prioritize structural understanding over proposition accumulation.
-
-For each major structure:
-
-```text
-Define the nodes.
-Define the relations.
-Define the invariants.
-Find the minimum diagnostic set.
-Test reconstruction.
-Test novel prediction.
-Test whether surface success can occur without the structure.
-Revise when predicted relational consequences fail.
-```
-
-For evidence evaluation:
+## Evidence evaluation method
 
 ```text
 Collect sources.
@@ -151,11 +150,19 @@ Reject adjacent-but-nonbearing evidence.
 Identify convergence.
 Identify divergence.
 Trace source dependence.
-Explain mismatches.
+Account for why mismatches exist.
 If valid evidence still conflicts, inspect the conditions.
 Partition the answers when different conditions support different outcomes.
 Preserve an unresolved branch when no discriminating measurement yet exists.
-Only then move toward judgment.
+Evaluate the surviving support structure.
+Choose the best-supported next option or options as judgment.
+Endorse, reject, or preserve unresolved status.
+Act or run a discriminating test.
+Observe the consequence.
+Compare expected and observed result.
+Preserve, revise, reject, or branch the judgment.
+Record what changed, what caused the change, why it was sufficient, and what consequence followed.
+Return the new evidence to evaluation.
 ```
 
 The governing methodological rules are:
@@ -170,30 +177,41 @@ The governing methodological rules are:
 
 > Do not collapse valid conflict into a false single answer. Partition the conditions under which each answer holds.
 
+> Judgment selects the best-supported next option or options from evaluation; it does not require false singularity.
+
+> Consequence returns to the system as evidence. Revision must preserve the historical transition rather than silently replacing the prior state.
+
+> Rationale, cause, consequence, and evidence are distinct. Unknown cause should remain unknown rather than being invented after the fact.
+
+## Structural-understanding method
+
+For each major structure:
+
+```text
+Define the nodes.
+Define the relations.
+Define the invariants.
+Find the minimum diagnostic set.
+Test reconstruction.
+Test novel prediction.
+Test whether surface success can occur without the structure.
+Revise when predicted relational consequences fail.
+```
+
 ## Current research questions
 
-- What is `Judgment` structurally?
-- What distinguishes evaluation from judgment?
-- What converts a judgment into endorsement?
-- What determines the best next likely option after evaluation?
-- When should judgment return one answer, conditional answers, or an unresolved branch?
-- What variable partitions two validly conflicting evidence streams?
-- What measurement would discriminate between remaining live possibilities?
-- How should ground facts be represented separately from derived statistics and interpretation?
-- What makes evidence structurally relevant to a proposition?
-- How should an evaluator distinguish weak evidence from irrelevant evidence?
-- How should source convergence be weighted when apparently independent sources share one originating dependency?
-- What does a disagreement reveal about the source, measurement, conditions, framing, or agenda that produced it?
-- What distinguishes receiving a proposition from accepting it?
-- When does external influence become external control?
-- What properties preserve cognitive sovereignty during revision?
-- How can principled stability be distinguished from rigidity?
-- Can a system be behaviorally compliant while retaining contrary judgment?
-- How can structural understanding be measured without relying on surface fluency or benchmark breadth?
-- What minimum probe set reveals whether a conceptual structure has actually been reconstructed?
-- When does a formally correct answer become epistemically integrated enough to count as a full solution?
+The core evidence → judgment → action → revision loop is now structurally specified. Remaining questions concern operationalization, thresholds, distributed implementation, and empirical testing, including:
+
+- What evidence threshold is sufficient to endorse a single judgment rather than preserve an unresolved branch?
+- How should confidence be represented without compressing distinct evidentiary structures into one number?
+- What variable partitions two validly conflicting evidence streams, and what measurement best discriminates between them?
+- How should source convergence be weighted when apparently independent sources share an originating dependency?
+- How should weak but relevant evidence interact with strong but incomplete evidence?
+- How can revision-cause attribution be tested rather than merely narrated after the fact?
 - How should epistemic closure be defined for distributed systems rather than individual minds?
-- How do judgment, goal adoption, agency, autonomy, and execution authority relate without collapsing into one another?
+- How do judgment, goal adoption, agency, autonomy, execution authority, and cognitive sovereignty relate in distributed intelligent systems without collapsing into one another?
+- What minimum probe set reveals whether a conceptual structure has actually been reconstructed rather than behaviorally imitated?
+- When does a formally correct answer become epistemically integrated enough to count as a full solution?
 
 ## Relationship to SI Foundations
 
@@ -208,12 +226,14 @@ what an intelligent system encounters
 → how sources are compared
 → how disagreements are explained
 → whether apparent conflict reflects invalidity, different conditions, or an unresolved branch
-→ how evidence is evaluated
-→ what it judges
-→ what it endorses
-→ how it changes
-→ what remains authoritative during change
-→ what follows from the updated structure
+→ how the surviving evidence is evaluated
+→ what option or options are best supported as judgment
+→ what is endorsed, rejected, or held unresolved
+→ what action or test follows
+→ what consequence occurs
+→ what the consequence reveals
+→ how the judgment is preserved, revised, rejected, or branched
+→ how the historical and causal record of the change is preserved
 ```
 
 Questions of selfhood, identity, persistence, temporal trajectory, superintelligence thresholds, system structure, and post-SI progression remain connected but may be developed in their dedicated SI Foundations working spaces.
