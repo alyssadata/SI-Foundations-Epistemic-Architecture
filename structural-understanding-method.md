@@ -124,6 +124,73 @@ Possible adversarial conditions include:
 
 If performance collapses when surface cues are removed, prior success may have measured recognition or local heuristics rather than structural understanding.
 
+## Map-button distinction: operational success is not sufficient evidence of understanding
+
+A system can conceivably learn to navigate a structured environment by selecting the correct action without demonstrating the structure that makes the action correct.
+
+A simple analogy is a map containing buttons. An agent may learn:
+
+```text
+state -> press button -> desired result
+```
+
+and achieve reliable success. But reliable button selection alone does not establish that the agent can represent or recover:
+
+- what the button is;
+- why that button produces the result;
+- how the button relates to the rest of the map;
+- which evidence warrants selecting it;
+- what would change if the map's structure changed.
+
+This yields a central epistemic distinction:
+
+```text
+correct action != demonstrated structural understanding
+successful navigation != demonstrated knowledge of the navigated structure
+```
+
+A benchmark that records only whether the correct button was pressed may therefore be unable to distinguish interface competence from structural understanding.
+
+### Layers exposed by the map-button case
+
+The case separates at least four epistemic layers:
+
+1. **Operational success** — the action produces the intended result.
+2. **Epistemic access** — the agent can identify the evidence relevant to the action.
+3. **Epistemic structure** — the agent can recover how the relevant entities and relations fit together.
+4. **Epistemic grounding** — the agent can state and preserve why the action is warranted rather than merely that it has worked before.
+
+The higher layers must not be inferred solely from success at the lower layer.
+
+## Epistemic non-equivalence of agents
+
+Two agents can produce the same correct action without thereby occupying the same epistemic state.
+
+They may differ in:
+
+- evidence encountered;
+- source history;
+- order of observations;
+- prior actions and consequences;
+- retained distinctions;
+- inferred relations;
+- confidence or unresolved conflict;
+- trajectory through the problem space.
+
+Therefore:
+
+```text
+same answer != same knowledge
+same behavior != same epistemic state
+same successful action != same route of justification
+```
+
+This matters for evaluation because output equivalence can hide differences in provenance, grounding, and structural reconstruction.
+
+The evaluator should therefore ask not only whether two agents reached the same answer, but whether the evidential and relational path supporting that answer is recoverable and whether each agent preserves the same relevant structure under perturbation.
+
+This also connects epistemic architecture to trajectory: an agent's present answer cannot by itself erase the path by which that answer became warranted.
+
 ## Compression without collapse
 
 A mature conceptual structure should support compression: a small number of relations and invariants should explain a larger set of cases.
